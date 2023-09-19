@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- it should be "head" not "header" -->
 <header>
 	<title>Molta força amb el curs!</title>
 </header>
@@ -12,10 +12,18 @@
 	<h2>Índice de contenidos</h2>
 	<ul>
 		<li><a href="https://facebook.com">Enlace a Facebook</a></li>
+		<!-- it should be "href" instead of "src" -->
 		<li><a src="http://www.google.com">Enlace a Google</a></li>
+		<!-- "Enlace al SOC" should between the tag "a", like this: 
+			<li><a href="https://serveiocupacio.gencat.cat/ca/inici">Enlace al SOC</a></li-->
 		<li><a href="https://serveiocupacio.gencat.cat/ca/inici"></a>Enlace al SOC</li>
 	</ul>
 
+	<!-- "h2" shouldn't nest "p" tags, also paragraphs bad coded, it should start and close the tag in each line. It should be something like this: 
+	<h2>Los párrafos:</h2>
+	<p>Esto es un párrafo.</p>
+	<p>Y esto es otro párrafo.</p>
+	-->
 	<h2>
 		<p>Esto es un párrafo.<br><br>
 			Y esto es otro párrafo.</p>
@@ -24,8 +32,9 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex mollitia quia, corporis dicta, eaque itaque.</p>
 
 	<p>
-		Un texto legendario
-		sucede en un gran escenario
+		Un texto legendario<!-- is missing teh line break tag <br> -->
+		sucede en un gran escenario<!-- is missing teh line break tag <br> -->
+		<!-- "error" should be nested by the tags "em" and "strong" well: <strong><em>error</em></strong>-->
 		¿ves el <em><strong>error</em></strong>?
 	</p>
 
